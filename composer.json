@@ -1,0 +1,22 @@
+{
+	"name": "ooxif/laravel-spec-schema",
+	"description": "Extends Laravel's schema builder",
+	"keywords": ["laravel", "eloquent"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "ooxif",
+			"email": "oo@xif.at"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"illuminate/database": "5.0.*",
+		"ooxif/laravel-spec-schema": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {
+			"Ooxif\\LaravelSpecSchema\\": "src/Ooxif/LaravelSpecSchema"
+		}
+	}
+}
