@@ -1,4 +1,4 @@
-laravel-spec-blueprint
+laravel-spec-schema
 ======================
 
 Extends Laravel's Schema/Grammar/Blueprint to describe drivers' specific features.
@@ -6,11 +6,11 @@ Extends Laravel's Schema/Grammar/Blueprint to describe drivers' specific feature
 Install
 -------
 
-`composer require "ooxif/laravel-spec-blueprint:1.0.*"`
+`composer require "ooxif/laravel-spec-schema:1.0.*"`
 
 then
 - add `'Ooxif\LaravelSpecSchema\SpecSchemaServiceProvider',` to `providers` in `config/app.php`.
-- replace `'Schema' => 'Illuminate\Support\Facades\Schema',` to `'Schema' => 'Ooxif\laravelSpecSchema\Facades\Schema',` in `aliases` of `config/app.php`.
+- replace `'Schema' => 'Illuminate\Support\Facades\Schema',` to `'Schema' => 'Ooxif\LaravelSpecSchema\Facades\Schema',` in `aliases` of `config/app.php`.
 
 
 Examples
