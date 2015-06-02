@@ -1,7 +1,7 @@
 {
 	"name": "ooxif/laravel-spec-schema",
-	"description": "Extends Laravel's schema builder",
-	"keywords": ["laravel", "eloquent"],
+	"description": "Extends Laravel's Schema/Grammar/Blueprint to describe drivers' specific features",
+	"keywords": ["laravel", "eloquent", "database", "mysql", "schema"],
 	"license": "MIT",
 	"authors": [
 		{
