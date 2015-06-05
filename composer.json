@@ -17,5 +17,8 @@
 		"psr-4": {
 			"Ooxif\\LaravelSpecSchema\\": "src/Ooxif/LaravelSpecSchema"
 		}
+	},
+	"suggest": {
+		"ooxif/laravel-query-param": "Treats binary data in a correct way with Laravel's database system (Eloquent)"
 	}
 }
