@@ -56,7 +56,7 @@ class SchemaManager
      * @param string|null $connectionName
      * @return BuilderInterface
      */
-    public function createBuilder($connectionName)
+    public function createBuilder($connectionName = null)
     {
         /**
          * @var Connection $connection
