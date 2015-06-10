@@ -42,7 +42,7 @@ Schema::create('table_name', function (Blueprint $table) {
 
 
 Use your own Schema Builder/Grammar/Blueprint classes
-----------------------------------------------
+-----------------------------------------------------
 
 ```php
 class MyMySqlBuilder extends Ooxif\LaravelSpecSchema\MySql\Builder
