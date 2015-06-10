@@ -36,14 +36,14 @@ class SchemaManager
         'sqlite' => 'Ooxif\LaravelSpecSchema\SQLite\Grammar',
         'sqlserver' => 'Ooxif\LaravelSpecSchema\SqlServer\Grammar',
     );
-    
+
     /**
      * the class name which extends Illuminate\Database\Schema\Blueprint.
      * 
      * @var string
      */
     protected $blueprint = 'Ooxif\LaravelSpecSchema\Blueprint';
-    
+
     /**
      * @param ApplicationContract $app
      */
@@ -62,17 +62,17 @@ class SchemaManager
          * @var Connection $connection
          */
         $connection = $this->app['db']->connection($connectionName);
-        
+
         $driver = $connection->getDriverName();
-        
+
         $cls = $this->builders[isset($this->builders[$driver]) ? $driver : 'default'];
-        
+
         $builder = new $cls($this->app, $connection->getSchemaBuilder());
-        
+
         $this->setGrammarToBuilder($builder);
-        
+
         $this->setResolverToBuilder($builder);
-        
+
         return $builder;
     }
     
@@ -88,13 +88,13 @@ class SchemaManager
     protected function createGrammar(BuilderInterface $builder)
     {
         $driverName = $builder->getConnection()->getDriverName();
-        
+
         if (!isset($this->grammars[$driverName])) {
             throw new BadMethodCallException("Grammar class for the driver '{$driverName}' is not defined.'");
         }
-        
+
         $cls = $this->grammars[$driverName];
-        
+
         return new $cls();
     }
 
