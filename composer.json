@@ -20,5 +20,12 @@
 	},
 	"suggest": {
 		"ooxif/laravel-query-param": "Treats binary data in a correct way with Laravel's database system (Eloquent)"
-	}
+	},
+	"extra": {
+        "laravel": {
+            "providers": [
+                "Ooxif\\LaravelSpecSchema\\SpecSchemaServiceProvider"
+            ]
+        }
+    }
 }
