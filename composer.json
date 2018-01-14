@@ -11,7 +11,7 @@
 	],
 	"require": {
 		"php": ">=5.4.0",
-		"illuminate/database": "5.0.*||5.1.*||5.2.*"
+		"illuminate/database": "5.0.*||5.1.*||5.2.*||5.3.*||5.4.*||5.5.*"
 	},
 	"autoload": {
 		"psr-4": {
@@ -20,5 +20,12 @@
 	},
 	"suggest": {
 		"ooxif/laravel-query-param": "Treats binary data in a correct way with Laravel's database system (Eloquent)"
-	}
+	},
+	"extra": {
+        "laravel": {
+            "providers": [
+                "Ooxif\\LaravelSpecSchema\\SpecSchemaServiceProvider"
+            ]
+        }
+    }
 }
